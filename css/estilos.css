@@ -1,0 +1,313 @@
+header{
+  width: 100%auto;
+  height: 240px;
+  padding: 10px 10px;
+  font-size: 25px;
+  background-color: #5b7989;
+  border-radius: 10px 10px 1px 1px;
+  animation: slidein 3s;
+}
+header h1 {
+  font-family: 'Indie Flower', cursive;
+  text-shadow: 2px 2px #02010a;
+  color: white;
+}
+body{
+  background: black;
+}
+#menu-principal{
+  text-align: right;
+  color: white;
+  text-shadow: 2px #02010a;
+	padding: 10px;
+
+}
+#menu-principal ul a{
+  font-family: 'Indie Flower', cursive;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 25px;
+  color: white;
+  border-bottom: 5px solid white transparent;
+
+}
+#menu-principal ul a:hover{
+  border-bottom: 5px solid white;
+}
+@-webkit-keyframes slidein {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+      margin-top: 0%;
+  }
+}
+
+#contenido{
+  display: flex;
+	flex-direction: column;
+  font-family: 'Indie Flower', cursive;
+  text-decoration: none;
+  color: white;
+}
+#contenido-galeria {
+	display: flex;
+	flex-direction: column;
+}
+.contenedor-galeria {
+	display: flex;
+	flex-direction: row;
+}
+.contenedor-galeria > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	width: 50%;
+}
+.contenedor1 {
+  background-color: #82c3a6
+}
+.contenedor2 {
+  display: flex;
+  flex-direction: row;
+  background-color: #d5c75f;
+}
+img{
+	border: 3px solid white;
+	width: 80%;
+}
+.contenedor1 > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+}
+.contenedor2 > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+}
+#imagen1{
+  width: 100%;
+}
+#imagen2 img{
+  width: 60%;
+  height: 50%:
+}
+#imagen2 img:hover{
+  transform:rotate(10deg);
+  box-shadow: 1px 1px #82c3a6,
+              2px 2px #82c3a6,
+              3px 3px #82c3a6;
+  border-radius: 2px;
+}
+#imagen3 img {
+  width: 60%;
+  height: 50%:
+}
+#imagen3 img:hover {
+  transform:translate(20px, 5px);
+  box-shadow: 1px 1px #82c3a6,
+              2px 2px #82c3a6,
+              3px 3px #82c3a6;
+  border-radius: 2px;
+}
+#imag-galeria1 img{
+-webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+filter: blur(10px);
+}
+#imag-galeria2 img{
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+#imag-galeria3 img{
+-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+filter: sepia(90%);
+}
+#imag-galeria4 img{
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+#imag-galeria6 img{
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+footer{
+  width: 100%;
+}
+.footer-container{
+  width: 100%;
+  background-color: #C6d5c5;
+}
+.footer-main{
+  width: 98%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-main .footer-columna{
+  width: calc(100% / 4);
+  text-align:left;
+}
+
+.footer-main .footer-columna h3{
+  font-family: 'Indie Flower', cursive;
+  text-shadow: 1px 1px #02010a;
+  color: black;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.footer-main .footer-columna p{
+  font-family: 'Indie Flower';
+  font-size: 15px;
+  display: inline-block;
+  margin-left: 1px;
+  margin-bottom: 1px;
+}
+@media screen and (max-width: 960px){
+
+	#contenido
+	{
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 640px){
+
+	#contenido{
+		width: 100%;
+		margin: 0 auto;
+	}
+  header{
+	width: 100%auto;
+	}
+  header h1{
+    font-size: 30px;
+  }
+  #menu-principal ul a{
+    font-family: 'Indie Flower', cursive;
+    text-decoration: none;
+    padding: 2px;
+    font-size: 25px;
+    color: white;
+    border-bottom: 5px solid white transparent;
+  }
+}
+@media screen and (max-width: 480px){
+
+#contenido{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.contenedor1 .contenedor2{
+	width: 100%;
+	}
+
+	header{
+  width: 100%auto;
+  height: 190px;
+  padding: 5px 5px;
+  border-radius: 5px 5px 1px 1px;
+	}
+  header h1{
+    font-size: 25px;
+  }
+  #menu-principal ul a{
+    font-family: 'Indie Flower', cursive;
+    text-decoration: none;
+    padding: 2px;
+    font-size: 20px;
+    color: white;
+    border-bottom: 5px solid white transparent;
+  }
+  .contenedor1 > div {
+  	text-align: center;
+  	padding: 1px;
+  	margin: 1px;
+  }
+  .contenedor2 > div {
+  	text-align: center;
+  	padding: 1px;
+  	margin: 1px;
+    }
+  img{
+  	border: 0px solid white;
+  	width: 100%;
+  }
+  #imagen1{
+    width: 100%;
+  }
+  #imagen2 img{
+    width: 100%;
+    height: 100%:
+  }
+  #imagen2 img:hover{
+    transform:rotate(10deg);
+    box-shadow: 1px 1px #82c3a6,
+                2px 2px #82c3a6,
+                3px 3px #82c3a6;
+    border-radius: 2px;
+  }
+  #imagen3 img {
+    width: 100%;
+    height: 100%:
+  }
+  #imagen3 img:hover {
+    transform:translate(10px, 3px);
+    box-shadow: 1px 1px #82c3a6,
+                2px 2px #82c3a6,
+                3px 3px #82c3a6;
+    border-radius: 2px;
+  }
+  footer{
+    width: 100%;
+  }
+  .footer-container{
+    width: 100%;
+  }
+  .footer-columna{
+    width: 98%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align:center
+  }
+  .footer-main .footer-columna{
+    width: calc(100% / 1);
+  }
+  .footer-main .footer-columna h3{
+    font-size: 25px;
+    text-align: center;
+  }
+  .footer-main .footer-columna p{
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    margin-top: auto;
+    margin-right: auto;
+  }
+  .contenedor-galeria {
+  	display: flex;
+  	flex-direction: column;
+}
+.contenedor-galeria > div {
+  width: 90%;
+	padding: 10px;
+	margin: 10px;
+
+  }
+}
